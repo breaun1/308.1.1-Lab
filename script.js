@@ -33,9 +33,31 @@ let arithChain = ((n1- n2) * n3) % n4;
 
 
 // check 4
- 
+const trip = (mph) => {
+  const fuel = 1500 / 30; // Equals 50 total gallons of fuel to complete trip
+  const time = 1500 / mph; // Equals time/hours for trip
+  const cost = (1500 / mph) * 3; // the cost of fuel
+
+  if (mph === 55) {
+    console.log(`You're going to need ${fuel} gallons to complete this trip. It will take ${time} hours to get there. It will cost $${cost} for this trip.`);
+  } else if (mph === 60) {
+    console.log(`You're going to need ${fuel} gallons to complete this trip. It will take ${time} hours to get there. It will cost $${cost} for this trip.`);
+  } else if (mph === 75) {
+    console.log(`You're going to need ${fuel} gallons to complete this trip. It will take ${time} hours to get there. It will cost $${cost} for this trip.`);
+  } else {
+    (
+      console.log(`You're going to need ${fuel} gallons to complete this trip. It will take ${time} hours to get there. It will cost $${cost} for this trip.`)
+    );
+  }
+};
+console.log(trip(55));
+
+// Part 2
 
 
+
+
+//
 
           /* End of Loops */
 
