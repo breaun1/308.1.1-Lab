@@ -3,43 +3,59 @@ const n1 = 10;
 const n2 = 15;
 const n3 = 20;
 const n4 = 5;
-''
-// const numArray = [10,15,20,5];
-// let newArray =[];
+
+// CHECK 1 Part 1
+
+const numArray = [n1,n2,n3,n4];
+let divBy5Array =[];
 
 
-// for(let i = 0; i < numArray.length; i++){
-//     if(numArray[i] % 5 === 0){
-//       let L_Array = numArray[i];
-//       newArray.push(i);
-//       console.log(newArray)
-//       console.log(numArray[i] + ' is  div by 5');
+for(let i = 0; i < numArray.length; i++){
+  if(numArray[i] % 5 === 0){
+    let loop_Array = numArray[i];
+    let array = divBy5Array.push(i);
+    console.log(divBy5Array)
+    console.log(`${numArray[i]} is  div by 5. The remainder is ${numArray[i]%5}`);
 
-//     } 
-  
-//   }
+  } 
+}
+// CHECK 2
+n1 > n4 ? "10 is greater than 5." : "last is greater than 1st";
 
-//   if(numArray[0] > numArray [3]){
-//     console.log("10 is greater than 5.")
-//  }else if(numArray [0] < numArray[3]){
-//    console.log("last is greater than 1st")
-  
-//  }
+  if(n1 > n4){
+    let positive = n1 > n4;
+ console.log(positive)
+    console.log("10 is greater than 5.")
+ }else( console.log("last is greater than 1st") )
+
+//  check 3
+let arithChain = ((n1- n2) * n3) % n4;
+
+
+// check 4
+ 
+
+
+
+          /* End of Loops */
+
 
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
 
+
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
-
+const divisibleby5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5)
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
+
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 
 // Check four: all unique numbers
